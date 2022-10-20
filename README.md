@@ -37,5 +37,8 @@ $ sudo apt-get install python3-pandas
 
 ***
 ## Step4. Arduino 燒錄 NRF24L01 code
-* Raspberry Pi 端的 Arduino 燒錄 NRF24L01 Sender 的 code
-* 繼電器端 Arduino 燒錄 NRF24L01 Receive 的 code
+* Raspberry Pi 端的 Arduino 燒錄 NRF24L01_Sender_1007 的 code
+* 繼電器端 Arduino 燒錄 NRF24L01_Receive_1007 的 code
+***
+## Step5. Random Forest ML training
+訓練的 csv 檔為地震屋所收集的數據 (pig_earthquake.csv)
