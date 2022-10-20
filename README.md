@@ -48,3 +48,14 @@ $ python3 RandomForest_predict.py
 > 運行此程式後，會產生出一個 model 檔及訓練的收斂圖
 ***
 ## Step6. DEMO
+### 使用最大地動加速度值 (PGA) 算法計算震級
+```shell
+$ python3 adxl345_NRF24L01_mqtt.py
+```
+### 使用機器學習 Random Forest 算法計算震級
+```shell
+$ python3 RF_adxl345_final.py 
+```
+***
+運行```python3 RF_adxl345_final.py```後，當有地震發生時會依據當下三軸感測器的值，進行 Random Forest 模型的預測，並隨即利用 NRF24L01 進行無線傳輸，級時的依據震度關閉家電，並利用 MQTT 通知使用者
+> 本專案有投稿至 2022智慧物聯網產學研討會 
