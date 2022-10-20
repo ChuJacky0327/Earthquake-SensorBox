@@ -38,7 +38,7 @@ $ sudo apt-get install python3-pandas
 > 參考來源 : [https://tutorials.webduino.io/zh-tw/docs/useful/example/smart-socket.html](https://tutorials.webduino.io/zh-tw/docs/useful/example/smart-socket.html)  
 3. Arduino 與 NRF24L01 接線 :
 ![image](https://github.com/ChuJacky0327/Earthake-SensorBox/blob/main/image/NRF24L01%E6%8E%A5%E7%B7%9A.jpg)
-> 參考來源 : [https://micro.rohm.com/tw/deviceplus/inspire/interviews/nrf24l01-rf-module-tutorial-1/][https://micro.rohm.com/tw/deviceplus/inspire/interviews/nrf24l01-rf-module-tutorial-1/]
+> 參考來源 : [https://micro.rohm.com/tw/deviceplus/inspire/interviews/nrf24l01-rf-module-tutorial-1/](https://micro.rohm.com/tw/deviceplus/inspire/interviews/nrf24l01-rf-module-tutorial-1/)
 ***
 ## Step3. Raspberry Pi-ADXL345 Data Collect
 此步驟為三軸感測器資料收集的程式，若有要於地震屋或現實環境收集地震的數據，可用此程式，若不需可跳過此步驟
