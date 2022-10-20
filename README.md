@@ -41,4 +41,10 @@ $ sudo apt-get install python3-pandas
 * 繼電器端 Arduino 燒錄 NRF24L01_Receive_1007 的 code
 ***
 ## Step5. Random Forest ML training
-訓練的 csv 檔為地震屋所收集的數據 (pig_earthquake.csv)
+訓練的 csv 檔為地震屋所收集的數據 (pig_earthquake.csv)，並利用 Random Forest 機器學習進行模型的訓練
+```shell
+$ python3 RandomForest_predict.py
+```
+> 運行此程式後，會產生出一個 model 檔及訓練的收斂圖
+***
+## Step6. DEMO
