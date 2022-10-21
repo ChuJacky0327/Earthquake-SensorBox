@@ -1,4 +1,4 @@
-# Earthake-SensorBox
+# Earthquake-SensorBox
 #### 模擬情境:
 利用 Raspberry Pi 連接三軸感測器(ADXL345)即時測出地震發生時當下區域的三軸偏移量，並帶入 Random Forest 機器學習預測出震級，將震級結果透過 NRF24L01 進行一對多的無線傳輸，以此控制連接於電器上的繼電器，實現分級控制，依據地震的震級關閉相應的電器，最後利用 MQTT 通知使用者，當下震級與關閉了什麼電器。
 > 以下為成果圖:
