@@ -42,8 +42,30 @@ $ sudo apt-get install python3-pandas
 > 參考來源 : [https://micro.rohm.com/tw/deviceplus/inspire/interviews/nrf24l01-rf-module-tutorial-1/](https://micro.rohm.com/tw/deviceplus/inspire/interviews/nrf24l01-rf-module-tutorial-1/)
 ***
 ## Step3. Raspberry Pi-ADXL345 Data Collect
-此步驟為三軸感測器資料收集的程式，若有要於地震屋或現實環境收集地震的數據，可用此程式，若不需可跳過此步驟
-
+此步驟為三軸感測器資料收集的程式，若有要於地震屋或現實環境收集地震的數據，可用此程式，若不需可跳過此步驟  
+收集資料前要先針對三軸感測器進行校正，因此會有兩種收集方式 : 
+### 1. 每次都扣掉初始位置進行校正 :
+#### 傳送端 :
+```shell
+$ cd /ADXL345_collect
+$ python3 adxl345_collect.py
+```
+#### 接收端 : (可由另外的電腦執行，達到遠端接收資料，會寫成 csv 檔)
+```shell
+$ cd /ADXL345_collect/adxl345data_original
+$ python3 adxl345data_originalSub.py
+```
+### 2. 每次都扣掉上一筆資料的位置進行校正 :
+#### 傳送端 :
+```shell
+$ cd /ADXL345_collect
+$ python3 adxl345_collect.py
+```
+#### 接收端 : (可由另外的電腦執行，達到遠端接收資料，會寫成 csv 檔)
+```shell
+$ cd /ADXL345_collect/adxl345data_last
+$ python3 adxl345data_lastSub.py
+```
 ***
 ## Step4. Arduino 燒錄 NRF24L01 code
 * Raspberry Pi 端的 Arduino 燒錄 NRF24L01_Sender_1007 的 code
