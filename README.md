@@ -79,11 +79,11 @@ $ python3 RandomForest_predict.py
 > 運行此程式後，會產生出一個 model 檔及訓練的收斂圖
 ***
 ## Step6. DEMO
-### 使用最大地動加速度值 (PGA) 算法計算震級
+### 使用最大地動加速度值 (PGA) 算法計算震級，並利用 MQTT 通知
 ```shell
 $ python3 adxl345_NRF24L01_mqtt.py
 ```
-### 使用機器學習 Random Forest 算法計算震級
+### 使用機器學習 Random Forest 算法計算震級，並利用 MQTT 通知
 ```shell
 $ python3 RF_adxl345_final.py 
 ```
