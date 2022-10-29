@@ -3,8 +3,7 @@
 利用 Raspberry Pi 連接三軸感測器(ADXL345)即時測出地震發生時當下區域的三軸偏移量，並帶入 Random Forest 機器學習預測出震級，將震級結果透過 NRF24L01 進行一對多的無線傳輸，以此控制連接於電器上的繼電器，實現分級控制，依據地震的震級關閉相應的電器，最後利用 MQTT 通知使用者，當下震級與關閉了什麼電器。
 > 以下為成果圖:
 ![image](https://github.com/ChuJacky0327/Earthquake-SensorBox/blob/main/image/SensorBox.png)
-> 物聯網研討會投稿:  
-[https://github.com/ChuJacky0327/Earthquake-SensorBox/blob/main/%E5%BE%AE%E5%9E%8B%E5%9C%B0%E9%9C%87%E6%84%9F%E6%B8%AC%E7%9B%92%E5%9C%B0%E9%9C%87%E6%84%9F%E6%B8%AC%E5%88%86%E7%B4%9A%E8%88%87%E9%9B%BB%E5%99%A8%E7%B7%8A%E6%80%A5%E6%8E%A7%E5%88%B6%E6%9C%8D%E5%8B%99.pdf](https://github.com/ChuJacky0327/Earthquake-SensorBox/blob/main/%E5%BE%AE%E5%9E%8B%E5%9C%B0%E9%9C%87%E6%84%9F%E6%B8%AC%E7%9B%92%E5%9C%B0%E9%9C%87%E6%84%9F%E6%B8%AC%E5%88%86%E7%B4%9A%E8%88%87%E9%9B%BB%E5%99%A8%E7%B7%8A%E6%80%A5%E6%8E%A7%E5%88%B6%E6%9C%8D%E5%8B%99.pdf)
+
 
 ***
 ## Step1. Raspberry Pi Update and install
@@ -90,5 +89,5 @@ $ python3 RF_adxl345_final.py
 ***
 運行```python3 RF_adxl345_final.py```後，當有地震發生時會依據當下三軸感測器的值，進行 Random Forest 模型的預測，並隨即利用 NRF24L01 進行無線傳輸，即時的依據震度關閉家電，並利用 MQTT 通知使用者
 
-> 本專案投稿至 2022智慧物聯網產學研討會  
-[https://github.com/ChuJacky0327/Earthquake-SensorBox/blob/main/%E5%BE%AE%E5%9E%8B%E5%9C%B0%E9%9C%87%E6%84%9F%E6%B8%AC%E7%9B%92%E5%9C%B0%E9%9C%87%E6%84%9F%E6%B8%AC%E5%88%86%E7%B4%9A%E8%88%87%E9%9B%BB%E5%99%A8%E7%B7%8A%E6%80%A5%E6%8E%A7%E5%88%B6%E6%9C%8D%E5%8B%99.pdf](https://github.com/ChuJacky0327/Earthquake-SensorBox/blob/main/%E5%BE%AE%E5%9E%8B%E5%9C%B0%E9%9C%87%E6%84%9F%E6%B8%AC%E7%9B%92%E5%9C%B0%E9%9C%87%E6%84%9F%E6%B8%AC%E5%88%86%E7%B4%9A%E8%88%87%E9%9B%BB%E5%99%A8%E7%B7%8A%E6%80%A5%E6%8E%A7%E5%88%B6%E6%9C%8D%E5%8B%99.pdf)
+本專案投稿至 2022智慧物聯網產學研討會  
+
