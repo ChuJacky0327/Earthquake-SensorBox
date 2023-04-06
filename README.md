@@ -71,7 +71,9 @@ $ python3 adxl345data_lastSub.py
 * 繼電器端 Arduino 燒錄 NRF24L01_Receive_1007 的 code
 ***
 ## Step5. Random Forest ML training
-訓練的 csv 檔為地震屋所收集的數據 (pig_earthquake.csv)，並利用 Random Forest 機器學習進行模型的訓練
+訓練的 csv 檔為地震屋所收集的數據 (pig_earthquake.csv)->三軸未校正資料，(adxl.csv) -> 三軸校正後資料  
+依照需求自行更換 csv  
+並利用 Random Forest 機器學習進行模型的訓練
 ```shell
 $ python3 RandomForest_predict.py
 ```
