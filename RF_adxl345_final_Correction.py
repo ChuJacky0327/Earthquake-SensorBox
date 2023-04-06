@@ -173,7 +173,7 @@ while True:
             az = axes['z'] - original['z']
             data = [ax,ay,az]
             print(data)
-            lr = joblib.load('pig_earthquake.model')
+            lr = joblib.load('adxl.model')
             #Predict = lr.predict([np.array([-9.4928,0.196133,2.27513])])
             Predict = lr.predict([data])
 
