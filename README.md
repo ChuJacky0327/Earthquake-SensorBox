@@ -82,9 +82,13 @@ $ python3 RandomForest_predict.py
 ```shell
 $ python3 adxl345_NRF24L01_mqtt.py
 ```
-### 使用機器學習 Random Forest 算法計算震級，並利用 MQTT 通知
+### 使用機器學習 Random Forest 算法計算震級，並利用 MQTT 通知(三軸未校正的)
 ```shell
 $ python3 RF_adxl345_final.py 
+```
+### 使用機器學習 Random Forest 算法計算震級，並利用 MQTT 通知(三軸有校正)
+```shell
+$ python3 RF_adxl345_final_Correction.py 
 ```
 ***
 運行```python3 RF_adxl345_final.py```後，當有地震發生時會依據當下三軸感測器的值，進行 Random Forest 模型的預測，並隨即利用 NRF24L01 進行無線傳輸，即時的依據震度關閉家電，並利用 MQTT 通知使用者
